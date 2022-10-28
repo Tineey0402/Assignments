@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, 0.75);
+    --lightgray: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body, html{
+    background-color: var(--lightgray);
+   /* font-size: 15px; */
+    width: 100%;
+    height: 100%;
+   
+}
+
+body{
+    font-size: 15px;
+    color: var(--lightgray);
+ 
+    
+}
+.box-container{
+    display: flex;
+    height: 100vh;  
+    /* width: 60%;
+    margin:auto; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.boxes{
+    width: 320px;
+    padding: 2rem 3rem;
+    border-radius: 5px;
+}
+
+.boxes h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--lightgray);
+    margin: 3rem 0;
+}
+
+.boxes p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 8rem;
+}
+
+.box1{
+background-color:var(--orange);
+box-shadow: 100% inherit;
+
+}
+.box1 button{
+    color:var(--orange);
+}
+.box2{
+background-color:var(--cyan);
+}
+.box2 button{
+    color:var(--cyan);
+}
+.box3{
+background-color:var(--dark-cyan);
+}
+.box3 button{
+    color:var(--dark-cyan);
+}
+button{
+    background-color: var(--lightgray);
+    color:inherit;
+    border: 2px solid var(--lightgray);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+}
+.boxes button:hover{
+    background-color: inherit;
+    color: var(--lightgray);
+}
